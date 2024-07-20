@@ -139,32 +139,32 @@
 	<br>
 	<center>
 		<span style="font-size:36px">RAW-Adapter: Adapting Pre-trained Visual Model to Camera RAW Images</span>
-		<table align=center width=800px>
-			<table align=center width=800px>
+		<table align=center width=600px>
+			<table align=center width=600px>
 				<tr>
 					<td align=center width=200px>
 						<center>
-							<span style="font-size:24px"><a href="https://cuiziteng.github.io/">Ziteng Cui</a></span>
+							<span style="font-size:24px"><a href="https://cuiziteng.github.io/">Ziteng Cui<sup>1</sup></a></span>
 						</center>
 					</td>
 					
 					<td align=center width=200px>
 						<center>
-							<span style="font-size:24px"><a href="https://www.mi.t.u-tokyo.ac.jp/harada/">Tatsuya Harada</a></span>
+							<span style="font-size:24px"><a href="https://www.mi.t.u-tokyo.ac.jp/harada/">Tatsuya Harada<sup>1,2</sup></a></span>
 						</center>
 					</td>
 				</tr>
 			</table>
 			
-			<table align=center width=800px>
+			<table align=center width=400px>
 				<tr>
-					<td align=center width=200px>
+					<td align=center width=120px>
 						<center>
 							<span style="font-size:14px"><a>1. The University of Tokyo</a></span>
 						</center>
 					</td>
 					
-					<td align=center width=200px>
+					<td align=center width=120px>
 						<center>
 							<span style="font-size:14px"><a>2. RIKEN AIP</a></span><br>
 						</center>
@@ -214,8 +214,9 @@
 		<center><h1>Abstract</h1></center>
 		<tr>
 			<td>
-			sRGB images are now the predominant choice for pre-training visual models in computer vision research, owing to their ease of acquisition and efficient storage. Meanwhile, the advantage of RAW images lies in their rich physical information under variable real-world challenging lighting conditions. For computer vision tasks directly based on camera RAW data, most existing studies adopt methods of integrating image signal processor (ISP) with backend networks, yet often overlook the interaction capabilities between the ISP stages and subsequent networks. 
-			Drawing inspiration from ongoing adapter research in NLP and CV areas, we introduce \textbf{RAW-Adapter}, a novel approach aimed at adapting sRGB pre-trained models to camera RAW data. RAW-Adapter comprises input-level adapters that employ learnable ISP stages to adjust RAW inputs, as well as model-level adapters to build connections between ISP stages and subsequent high-level networks.
+			sRGB images are now the predominant choice for pre-training visual models in computer vision research, owing to their ease of acquisition and efficient storage. Meanwhile, the advantage of RAW images lies in their rich physical information under variable real-world challenging lighting conditions. For computer vision tasks directly based on camera RAW data, most existing studies adopt 
+				methods of integrating image signal processor (ISP) with backend networks, yet often overlook the interaction capabilities between the ISP stages and subsequent networks. 
+			Drawing inspiration from ongoing adapter research in NLP and CV areas, we introduce <b>RAW-Adapter</b>, a novel approach aimed at adapting sRGB pre-trained models to camera RAW data. RAW-Adapter comprises input-level adapters that employ learnable ISP stages to adjust RAW inputs, as well as model-level adapters to build connections between ISP stages and subsequent high-level networks.
 			Additionally, RAW-Adapter is a general framework that could be used in various computer vision frameworks. Abundant experiments under different lighting conditions have shown our algorithm's state-of-the-art (SOTA) performance, demonstrating its effectiveness and efficiency across a range of real-world and synthetic datasets.
 			</td>
 		</tr>
