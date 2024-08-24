@@ -261,7 +261,7 @@
 					
 					RAW-Adapter is a general framework that could be built on various network backbone, it mainly includes 2 parts: Input-level Adapter and Model-level Adapters <br/>
 					<br>
-					<b>Input-level Adapter :</b> Including (1). dynamic enhancement, (2). denoise and (3). sharpen (Predicted by attention block P_K), as well as (4). white balance and (5).CCM (Predicted by attention block P_M) and (6) implicit 3D LUT <br/>
+					<b>Input-level Adapter :</b> Including (1). dynamic enhancement, (2). denoise and (3). sharpen, as well as (4). white balance and (5).CCM and (6) implicit 3D LUT <br/>
 					<br>
 					<b>Model-level Adapter :</b> Building the connection of above ISP part representation and model level features, dotted line in following pictures.
 				</td>
@@ -286,11 +286,10 @@
 			<tr>
 				<td width=850px>
 					
-					RAW-Adapter is a general framework that could be built on various network backbone, it mainly includes 2 parts: Input-level Adapter and Model-level Adapters <br/>
+					We adopt dynamic parameter prediction in <b>Input-level Adapter</b> (See (b) in above Figure). Attention block <i>P_K</i> is resposenble to predict the parameters of (1). enhancement (2). denoise and (3). sharpen. Meanwhile attention block <i>P_M</i> is resposenble to predict the parameters of (4). white balance and (5).CCM.
 					<br>
-					<b>Input-level Adapter :</b> Including (1). dynamic enhancement, (2). denoise and (3). sharpen (Predicted by attention block P_K), as well as (4). white balance and (5).CCM (Predicted by attention block P_M) and (6) implicit 3D LUT <br/>
-					<br>
-					<b>Model-level Adapter :</b> Building the connection of above ISP part representation and model level features, dotted line in following pictures.
+					The overall structure of <b>RAW-Adapter</b> is parameters-efficient, < 100K for <b>Input-level Adapter</b>, 100K ~ 600K for <b>Model-level Adapter</b>. More details please refer to our paper.
+					
 				</td>
 			</tr>
 		</table>
