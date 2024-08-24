@@ -237,7 +237,7 @@
 			<tr>
 				<td width=850px>
 					<center>
-						Performance of RAW-based visual tasks with and without sRGB pre-trained weights. Two methods: Dirty-Pixel (Siggraph 2021) and RAW-Adapter. 
+						<b>Pretrain Effect:</b> Performance of RAW-based visual tasks with and without sRGB pre-trained weights. Two methods: Dirty-Pixel (Siggraph 2021) and RAW-Adapter. 
 						Blue line means trained with MS COCO pre-train weights, purple line indicates ImageNet pre-train weights, the yellow line indicates training from scratch.
 						Using <b>sRGB pretrain weights</b> is crucial in <b>RAW-based vision tasks</b>.
 					</center>
@@ -281,7 +281,21 @@
 		</table>
 	</center>
 	
-	
+	<center>
+		<table width=1000px>
+			<tr>
+				<td width=850px>
+					
+					RAW-Adapter is a general framework that could be built on various network backbone, it mainly includes 2 parts: Input-level Adapter and Model-level Adapters <br/>
+					<br>
+					<b>Input-level Adapter :</b> Including (1). dynamic enhancement, (2). denoise and (3). sharpen (Predicted by attention block P_K), as well as (4). white balance and (5).CCM (Predicted by attention block P_M) and (6) implicit 3D LUT <br/>
+					<br>
+					<b>Model-level Adapter :</b> Building the connection of above ISP part representation and model level features, dotted line in following pictures.
+				</td>
+			</tr>
+		</table>
+	</center>
+	<br>
 
 	<center>
 		<table align=center width=1000px>
@@ -333,7 +347,6 @@
 		</span>
 	</table>
 	<br>
-
 	
 	<hr>
 	<table align=center width=800px>
